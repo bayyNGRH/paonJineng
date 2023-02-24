@@ -207,7 +207,6 @@ p.details {
     display: flex;
     align-items: end;
     background-size: 300%;
-
 }
 
 .card1 {
@@ -270,16 +269,6 @@ p.product-price {
     font-size: 1.4rem;
 }
 
-/* footer section */
-
-footer {
-    background-color: white;
-    margin-top: 5em;
-    padding: 1em;
-    text-align: center;
-}
-
-
 /* Effect */
 
 nav ul li a:hover:before {
@@ -314,6 +303,26 @@ nav ul li a:hover:before {
     transform-origin: bottom;
 }
 
+/* contact section */
+
+.contact {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer section */
+
+footer {
+    background-color: white;
+    margin-top: 5em;
+    padding: 1em;
+    text-align: center;
+}
+
 @keyframes reveal {
     from {
         transform: scaleY(1);
@@ -321,4 +330,31 @@ nav ul li a:hover:before {
     to {
         transform: scaleY(0);
     }
+}
+
+.harga {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 0rem;
+    overflow: hidden;
+    border:1px solid transparent;
+}
+
+.harga h1 {
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: black;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+      
+.harga h1:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu {
+    color: black;
+    height: 100%;
+    width: 100%;
 }
